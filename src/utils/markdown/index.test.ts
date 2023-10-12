@@ -81,6 +81,8 @@ I know some competitors were disappointed with the voting system for this compet
 
     expect(result).toMatchInlineSnapshot(`
       {
+        "audio": "",
+        "cover": "",
         "excerpt": "We are hosting a writing competition on xLog - $500 USDT in prizes are up for grabs. ($200 first place, $100 for 2nd, 3rd, and 4th place) St…",
         "frontMatter": {
           "EndTime": 2022-10-18T00:00:00.000Z,
@@ -94,10 +96,10 @@ I know some competitors were disappointed with the voting system for this compet
             "anxiete",
           ],
         },
+        "images": [],
         "toc": null,
         "tree": null,
       }
     `);
   });
 });
-
