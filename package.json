@@ -32,7 +32,7 @@
     "prebuild:test": "EXPO_NO_DOTENV=1 STAGE=test expo prebuild --clean --skip-dependency-update react-native",
     "prebuild:production": "EXPO_NO_DOTENV=1 STAGE=production expo prebuild --clean --skip-dependency-update react-native",
     "sync-act-secrets": "ts-node ./scripts/sync-act-secrets.ts",
-    "test": "jest",
+    "test": "yarn node --experimental-vm-modules $(yarn bin jest)",
     "test:ci": "act -P ubuntu-latest=caspianzhao/ubuntu:act-latest --secret-file ./.act.secrets --container-architecture linux/amd64",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
